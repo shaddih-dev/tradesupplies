@@ -1,0 +1,13 @@
+{
+  "name": "tradesupplies",
+  "version": "1.0.0",
+  "description": "Tradesupplies 3D Configuration App",
+  "main": "server/src/index.js",
+  "scripts": {
+    "start": "cd server && node src/index.js",
+    "install": "cd server && npm install"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
