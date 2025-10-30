@@ -1,0 +1,1 @@
+module.exports.storeFrontAccessService = require('./storeFrontAccessService.service')

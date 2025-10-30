@@ -1,0 +1,1 @@
+module.exports.StoreFrontAccess = require('./storeFrontAccess.model')

@@ -1,0 +1,46 @@
+<iframe 
+  width="{{ block.settings.frameWidth }}%" 
+  height="{{ block.settings.frameHeight }}px" 
+  src="https://spf.watermelon.icu" 
+  title="{{ block.settings.frameTitle }}" 
+  id="signPanelAppId"
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  allowfullscreen
+></iframe>
+
+{% schema %}
+{
+  "name": "Sign Panel",
+  "target": "section",
+  "javascript": "https://meggan-drouthiest-bureaucratically.ngrok-free.dev/app-section.js",
+  "settings": [
+    { 
+      "type": "text", 
+      "id": "frameTitle", 
+      "label": "Title", 
+      "default": "Sign Panel App" 
+    },
+    { 
+      "type": "range", 
+      "id": "frameWidth", 
+      "label": "Frame width",
+      "min": 20,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 100
+    },
+    { 
+      "type": "range", 
+      "id": "frameHeight", 
+      "label": "Frame height", 
+      "min": 400,
+      "max": 1200,
+      "step": 20,
+      "unit": "px",
+      "default": 500
+    }
+  ]
+}
+{% endschema %}
